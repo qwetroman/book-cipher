@@ -25,11 +25,11 @@ int main()
 	{
 	
 		
-		printf("Czy chcze pan kodowac(1) czy dekodowac(0): ");
+		printf("You want to code(1) or decode(0): ");
 		scanf("%d", &i);
 		if (i == 1) {
 			fp_decoded=fopen("Tekst.txt","rb");
-			printf("Zaczynamy kodowanie\n");
+			printf("Coding has begun\n");
 			z=fread(tekst,sizeof(char),100,fp_decoded);
 			
 			fp_cipher = fopen("Kod.txt","wb");
